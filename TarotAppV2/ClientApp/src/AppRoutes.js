@@ -17,7 +17,7 @@ const AppRoutes = [
     element: <FetchData />
     },
     {
-        path: '/tarot',
+        path: '/tarot-reading',
         element: <TarotReading />
     }
 ];

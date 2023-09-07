@@ -29,7 +29,8 @@ namespace TarotAppV2.Controllers
 
 
         };
-        [HttpGet("{numOfCards:int}")]
+        //[HttpGet("{numOfCards:int}")]
+        [HttpGet]
         /*public List<TarotModel> Get(int cardNumber)
         {
             var rand = new Random();
@@ -46,7 +47,7 @@ namespace TarotAppV2.Controllers
             return cards[cardNumber];
             
         }*/
-        public TarotModel[] Get(int numOfCards)
+        public TarotModel[] Get()
         {
             TarotModel[] items = Items.ToArray();
             return items;

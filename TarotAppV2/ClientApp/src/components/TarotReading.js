@@ -84,7 +84,7 @@ const TarotReading = () => {
 
         //setData(data);
         //fetch(`https://random-data-api.com/api/v2/beers`)
-        fetch(`1`)
+        fetch('tarot')
             .then((results) => {
                 //return results.json();
                 return JSON.stringify(results);
