@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import './NavMenu.css';
-
+const context = [
+    "/weatherforecast",
+    "/tarot",
+];
 export class NavMenu extends Component {
   static displayName = NavMenu.name;
 
@@ -20,6 +23,8 @@ export class NavMenu extends Component {
       collapsed: !this.state.collapsed
     });
   }
+
+    
 
   render() {
     return (
@@ -40,6 +45,12 @@ export class NavMenu extends Component {
                         </NavItem>
                         <NavItem>
                             <NavLink tag={Link} className="text-dark" to="/tarot-reading">Tarot</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink tag={Link} className="text-dark" to="/about">About</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink tag={Link} className="text-dark" to="/reading-history">History</NavLink>
                         </NavItem>
             </ul>
           </Collapse>
