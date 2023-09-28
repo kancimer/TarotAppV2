@@ -1,6 +1,6 @@
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+    color: #9cc1eb;
 }
 
 code {
@@ -8,7 +8,12 @@ code {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #f9faec;
+    background-color: #f9faec;
+    border-color: #1861ac;
+}
+:root {
+    --primary-color: #28282a; /* Your custom primary color */
+    --secondary-color: #9cc1eb; /* Your custom secondary color */
+    --custom-background: #f9faec; /* Your custom background color */
 }
